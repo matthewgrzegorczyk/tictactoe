@@ -22,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClassicTicTacToe.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClassicTicTacToe.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Foo/ClassicTicTacToe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.970589">
-              <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.4784689">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               <folding>
                 <element signature="e#23#51#0#PHP" expanded="true" />
               </folding>
@@ -44,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassicTicTacToeTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClassicTicTacToeTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Foo/Tests/ClassicTicTacToeTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40191388">
+            <state vertical-scroll-proportion="-14.294118">
               <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
               <folding />
             </state>
@@ -311,21 +311,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Foo/ClassicTicTacToe.php">
+    <entry file="file://$PROJECT_DIR$/src/Foo/Tests/ClassicTicTacToeTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.970589">
-          <caret line="100" column="53" selection-start-line="100" selection-start-column="53" selection-end-line="100" selection-end-column="53" />
-          <folding>
-            <element signature="e#23#51#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-14.294118">
+          <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Foo/Tests/ClassicTicTacToeTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Foo/ClassicTicTacToe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40191388">
-          <caret line="56" column="73" selection-start-line="56" selection-start-column="73" selection-end-line="56" selection-end-column="73" />
-          <folding />
+        <state vertical-scroll-proportion="0.4784689">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <element signature="e#23#51#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

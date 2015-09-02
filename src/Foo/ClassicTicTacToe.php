@@ -52,6 +52,7 @@ class ClassicTicTacToe implements TicTacToeInterface
         if($this->_moves >= 9) {
             return true;
         }
+        return false;
     }
 
     /**
@@ -70,35 +71,35 @@ class ClassicTicTacToe implements TicTacToeInterface
      */
     public function getWinner() {
         // Check top row
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][0] == $this->_board[0][1] && $this->_board[0][1] == $this->_board[0][2])
+        if ($this->_board[0][0] && $this->_board[0][0] == $this->_board[0][1] && $this->_board[0][1] == $this->_board[0][2])
             return $this->_board[0][0];
 
         // Check middle row
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[1][0] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[1][2])
+        if ($this->_board[1][0] && $this->_board[1][0] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[1][2])
             return $this->_board[1][0];
 
         // Check bottom row
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[2][0] == $this->_board[2][1] && $this->_board[2][1] == $this->_board[2][2])
+        if ($this->_board[2][0] && $this->_board[2][0] == $this->_board[2][1] && $this->_board[2][1] == $this->_board[2][2])
             return $this->_board[2][0];
 
         // Check first column
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][0] == $this->_board[1][0] && $this->_board[1][0] == $this->_board[2][0])
+        if ($this->_board[0][0] && $this->_board[0][0] == $this->_board[1][0] && $this->_board[1][0] == $this->_board[2][0])
             return $this->_board[0][0];
 
         // Check middle column
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][1] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][1])
+        if ($this->_board[0][1] && $this->_board[0][1] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][1])
             return $this->_board[0][1];
 
         // Check last column
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][2] == $this->_board[1][2] && $this->_board[1][2] == $this->_board[2][2])
+        if ($this->_board[0][2] && $this->_board[0][2] == $this->_board[1][2] && $this->_board[1][2] == $this->_board[2][2])
             return $this->_board[0][2];
 
         // Check diagonal 1
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][0] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][2])
+        if ($this->_board[0][0] && $this->_board[0][0] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][2])
             return $this->_board[0][0];
 
         // Check diagonal 2
-        if (in_array($this->_board[0][0], ['X', 'Y']) && $this->_board[0][2] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][0])
+        if ($this->_board[0][2] && $this->_board[0][2] == $this->_board[1][1] && $this->_board[1][1] == $this->_board[2][0])
             return $this->_board[0][2];
 
         return false;
