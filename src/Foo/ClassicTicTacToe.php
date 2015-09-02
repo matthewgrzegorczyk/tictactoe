@@ -11,7 +11,7 @@ class ClassicTicTacToe implements TicTacToeInterface
     private $_board = [];
     private $_moves = 0;
     private $_lastActivePlayer = '';
-    private $_activePlayer = 'X';
+    private $_activePlayer = '';
     private $_errors = [
         'wrong_player' => "You can't use same player twice in a row.",
         'field_taken' => "Field is already taken. Choose another one."
@@ -28,7 +28,7 @@ class ClassicTicTacToe implements TicTacToeInterface
         $this->_clearBoard();
         $this->_moves = 0;
         $this->_lastActivePlayer = '';
-        $this->_activePlayer = 'X';
+        $this->_activePlayer = '';
     }
 
     /**
@@ -53,7 +53,7 @@ class ClassicTicTacToe implements TicTacToeInterface
      * @return boolean
      */
     public function isEnded() {
-        if($this->_moves >= 9) {
+        if($this->_moves >= 9 || $this->isTied() || $this->getWinner() !== false) {
             return true;
         }
         return false;
@@ -125,6 +125,11 @@ class ClassicTicTacToe implements TicTacToeInterface
      * @throws Foo\WrongPlayerException if trying to move same player twice in a row.
      */
     private function _move($x, $y, $mark) {
+        // If it's the first move set activePlayer
+        if($this->_moves === 0) {
+            $this->_activePlayer = $mark;
+        }
+
         if($mark === $this->_lastActivePlayer) {
             throw new WrongPlayerException($this->_errors['wrong_player']);
         }
